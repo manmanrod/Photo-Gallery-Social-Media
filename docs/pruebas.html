@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+
+    <script src="/js/libs/jquery-3.4.1.min.js"></script>
+    <script src="/js/libs/popper.min.js"></script>
+    <script src="/js/libs/bootstrap.min.js"></script>
+    <script src="/js/libs/axios.min.js"></script>
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/utils/include.js"></script>
+    <script type="module" src="js/index.js"></script>
+    <script src= "js/header.js" type="module"></script>
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-md-1 align-self-center">
+              <a class="nav-link" href="profile.html">
+                <img src="https://media.vozpopuli.com/2021/05/13/elon-e1620924119561-1568x882.jpg" alt="profile_icon" width="30" height="30" class="rounded-circle">
+              </a>
+            </div>
+            <div class="col-md-11 align-self-center">
+              <div p-3"><a class="user-name" href="profile.html?userId=${photo.userId}"><dt></dt></a></div>
+              
+              </div>
+          </div>
+        </div>
+        <img src="${photo.url}" alt="1618470275_584631_1618470556_noticia_normal" class="card-img-top">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-1 align-self-center">
+              <img src="/images/heart_icon.png" alt="heart_icon" width="30" height="30" class="heart_icon">
+            </div>
+            <div class="media_puntuacion col-md-6 align-self-center">
+              <dt></dt>
+            </div>
+            <div class="hora_subida col-md-5">
+              <p class="card-text text-muted text-right">${photo.date}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
+
+
+

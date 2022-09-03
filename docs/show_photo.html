@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Photo Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <script src="/js/libs/jquery-3.4.1.min.js"></script>
+    <script src="/js/libs/popper.min.js"></script>
+    <script src="/js/libs/bootstrap.min.js"></script>
+    <script src="/js/libs/axios.min.js"></script>
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/utils/include.js"></script>
+    <script src="/js/show_photo.js" type="module"></script>
+    <script src= "js/header.js" type="module"></script>
+
+</head>
+
+
+<body>
+    <div id="header"></div>
+
+    <h1 class="text-center title">
+        Photo Details
+    </h1>
+
+    
+    <div class="container" style="max-width: 100%;">
+
+        <div id="errors"></div>
+
+        <!--Display photo here with JavaScript -->
+        <div class="container" id="photo-details" style="width: 95%;"></div>
+    
+    </div> <!-- Container ends here -->
+
+
+
+    <!-- INSERT SPACE HERE -->
+    <div class="top-bottom-margins"></div>
+
+
+    <div id="footer">
+
+    <script>
+        include("header.html", "#header");
+        include("footer.html", "#footer");
+    </script>
+
+
+</body>
+
+</html>

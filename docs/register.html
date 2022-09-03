@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+
+    <script src="/js/libs/jquery-3.4.1.min.js"></script>
+    <script src="/js/libs/popper.min.js"></script>
+    <script src="/js/libs/bootstrap.min.js"></script>
+    <script src="/js/libs/axios.min.js"></script>
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/utils/include.js"></script>
+    <script type="module" src="js/register.js"></script>
+    <script src="js/header.js" type="module"></script>
+    <title>Register</title>
+
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <div class="container">
+
+        <!-- DISPLAY FORM VALIDATION ERRORS -->
+        <div id="errors"></div>
+
+
+        <div class="row">
+
+            <!-- LEFT SIDE -->
+            <div class="col-md-3"></div>
+
+            <!--MID SIDE. WHERE THE CONTENT OF THE PAGE IS DISPLAYED -->
+            <div class="col-md-6 text-center justify-content-center" style="background-color: white;">
+
+                <form id="register-form">
+
+                    <div class="row text-center">
+                        <div class="col-md">
+                            <h1 class="title text-center">Register</h1>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="form-group">
+                                <label for="firstName-input">Name:</label>
+                                <input required class="form-control" type="text" name="firstName" id="firstName-input"
+                                    placeholder="Your name">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="form-group">
+                                <label for="lastName-input">Surname:</label>
+                                <input required class="form-control" type="text" name="lastName" id="lastName-input"
+                                    placeholder="Your surname">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="form-group">
+                                <label for="Email-input">Email:</label>
+                                <input required class="form-control" type="email" name="email" id="Email-input"
+                                    placeholder="Your email">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="form-group">
+                                <label for="telephone-input">Telephone:</label>
+                                <input class="form-control" type="text" name="telephone" id="telephone-input"
+                                    placeholder="Your telephone here">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="form-group">
+                                <label for="username-input">Username:</label>
+                                <input required class="form-control" type="text" name="username" id="username-input"
+                                    placeholder="Your username (public)">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="form-group">
+                                <label for="password-input">Password:</label>
+                                <input required class="form-control" type="password" name="password" id="password-input"
+                                    placeholder="Your password">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="form-group">
+                                <label for="repeat_password-input">Repeat your password:</label>
+                                <input required class="form-control" type="password" name="repeat_password" id="repeat_password-input"
+                                    placeholder="Repeat your password">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row text-center">
+                        <div class="col-md">
+                            <div class="form-group">
+                                <label for="user-photo-url">Profile picture</label>
+                                <input class="form-control" type="url" name="avatarUrl" id="user-photo-url"
+                                    placeholder="Insert URL of your profile picture here">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row text-center">
+                        <div class="col-md">
+                            <button class="btn btn-dark" type="submit" style="margin-bottom: 1em;">Register</button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div> <!-- mid page div ends here -->
+
+
+            <!-- RIGHT SIDE -->
+            <div class="col-md-3"></div>
+
+
+        </div> <!-- BIG ROW ends here -->
+    </div> <!-- container ends here -->
+
+
+    <!-- INSERT SPACE HERE -->
+    <div class="row top-bottom-margins"></div>
+
+
+    <div id="footer">
+
+        <script>
+            include("header.html", "#header");
+            include("footer.html", "#footer");
+        </script>
+
+</body>
+
+</html>

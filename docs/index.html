@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+
+    <script src="/js/libs/jquery-3.4.1.min.js"></script>
+    <script src="/js/libs/popper.min.js"></script>
+    <script src="/js/libs/bootstrap.min.js"></script>
+    <script src="/js/libs/axios.min.js"></script>
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/utils/include.js"></script>
+    <script type="module" src="js/index.js"></script>
+    <script src= "js/header.js" type="module"></script>
+
+
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <!--Home title-->
+    <h1 class="text-center title">
+        <i class="fa fa-home" aria-hidden="true"></i>
+        Home
+    </h1>
+
+    <div id="errors"></div>
+
+    <!--Display categories DROPDOWN -->
+    <div class="container">
+        <!-- Category section is not DONE
+        <div class="dropdown text-center">
+            <h3>Display category photos: </h3>
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Choose category
+            </button>
+
+            <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Selfie</a>
+                <a class="dropdown-item" href="#">Landscape</a>
+                <a class="dropdown-item" href="#">Dogs</a>
+                <a class="dropdown-item" href="#">Coding</a>
+            </div>
+        </div>
+        -->
+
+    </div>
+
+        <div class="container" id="container">
+            <div class="row" id="gallery">
+            </div>
+        </div>
+    
+
+    <!--INSERT SPACE HERE-->
+    <div class="top-bottom-margins"></div>
+
+
+    <div id="footer">
+
+        <script>
+            include("header.html", "#header");
+            include("footer.html", "#footer");
+        </script>
+
+
+
+    </div>
+
+</body>
+
+</html>

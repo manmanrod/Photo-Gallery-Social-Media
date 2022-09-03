@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+
+    <script src="/js/libs/jquery-3.4.1.min.js"></script>
+    <script src="/js/libs/popper.min.js"></script>
+    <script src="/js/libs/bootstrap.min.js"></script>
+    <script src="/js/libs/axios.min.js"></script>
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Login</title>
+    
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/utils/include.js"></script>
+    <script src= "js/header.js" type="module"></script>
+    <script src="/js/login.js" type="module"></script>
+
+</head>
+<body>
+
+    <div id="header"></div>
+
+
+    <div class="container">
+
+        <!-- DISPLAY LOGIN ERRORS -->
+        <div id="errors"></div>
+
+        <div class="row">
+
+            <!-- LEFT SIDE -->
+            <div class="col-md-3"></div>
+
+
+
+            <!-- DISPLAY PAGE CONTENT HERE -->
+            <div class="col-md-6 text-center" style="background-color: white;">
+
+                <form id="login-form">
+
+                    <div class="row text-center">
+                        <div class="col-md">
+                            <h1 class="title text-center">
+                                <i class="fa fa-sign-in"></i> Sign in
+                            </h1>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="form-group">
+                                <label for="username-input">Username:</label>
+                                <input class="form-control" type="username" name="username" id="username-input" placeholder="Your username">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="form-group">
+                                <label for="password-input">Password:</label>
+                                <input class="form-control" type="password" name="password" id="password-input" placeholder="Your password">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md">
+                            <button class="btn btn-dark" type="submit" style="margin-bottom: 1em;">Sign in</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div> <!-- Display page content ends here -->
+
+
+
+            <!-- RIGHT SIDE. Dont show anything here -->
+            <div class="col-md-3"></div>
+        </div> <!-- Row ends here -->
+        
+    </div>
+    
+
+    <div id="footer"></div>
+
+        <script>
+            include("header.html", "#header");
+            include("footer.html", "#footer");
+        </script>
+
+</body>
+</html>

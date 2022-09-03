@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>User profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+
+    <script src="/js/libs/jquery-3.4.1.min.js"></script>
+    <script src="/js/libs/popper.min.js"></script>
+    <script src="/js/libs/bootstrap.min.js"></script>
+    <script src="/js/libs/axios.min.js"></script>
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/utils/include.js"></script>
+    
+    <script src= "js/header.js" type="module"></script>
+    <script src="/js/profile.js" type="module"></script>
+
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <!--INSERT SPACE HERE -->
+    <div class="top-bottom-margins"></div>
+
+    <div id="errors"></div>
+
+
+
+    <div class="container">
+
+        <!-- USER DETAILS-->
+        <div class="row">
+
+        
+            <div class="col-md-3 text-center">
+                <img src="/docs/images/user avatar icon.png" height="200" width="200" id="userPhoto" class="rounded-circle">
+                <h4 id="username"></h4>
+            </div>
+
+            <div class="col-md-9">
+
+                <!-- Name -->
+                <div class="row">
+                    <h3>Name:</h3>
+                    <p class="my-auto both-margins" id="firstName"></p>
+                </div>
+
+                <!-- Surname -->
+                <div class="row">
+                    <h3>Surname:</h3>
+                    <p class="my-auto both-margins" id="lastName"></p>
+                </div>
+
+                <!-- Email -->
+                <div class="row">
+                    <h3>Email:</h3>
+                    <p class="my-auto both-margins" id="email"></p>
+                </div>
+
+            </div><!-- Col with details end here -->
+
+        </div> <!-- Row ends here -->
+
+
+
+        <hr class="style1">
+
+
+        <!-- MY PHOTOS -->
+        <div class="row">
+            <div class="col-md-12">
+
+                <h2 class="title">My Photos</h2>
+
+                <div class="container">
+                    <div class="row" id="user-photos-container">
+                        <!--
+                        <div class="col-md-4 text-center">
+                            <div class="card my_card">
+                                <a href="show_photo.html">
+                                    <img src="https://estaticos.miarevista.es/uploads/images/recipe/554207ab0a73fed41f01dc99/sandwich-pavo_0.jpg"
+                                        class="card-img-top img-rounded" alt="Merienda">
+                                </a>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Merienda</h5>
+                                    <h6 class="card-title"> <a href="user_profile.html"> @username </a> </h6>
+                                    <a href="show_photo.html" class="btn btn-primary">Click for more info</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 text-center">
+                            <div class="card my_card">
+                                <a href="show_photo.html">
+                                    <img src="https://estaticos.miarevista.es/uploads/images/recipe/554207ab0a73fed41f01dc99/sandwich-pavo_0.jpg"
+                                        class="card-img-top img-rounded" alt="Merienda">
+                                </a>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Merienda</h5>
+                                    <h6 class="card-title"> <a href="user_profile.html"> @username </a> </h6>
+                                    <a href="show_photo.html" class="btn btn-primary">Click for more info</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 text-center">
+                            <div class="card my_card">
+                                <a href="show_photo.html">
+                                    <img src="https://estaticos.miarevista.es/uploads/images/recipe/554207ab0a73fed41f01dc99/sandwich-pavo_0.jpg"
+                                        class="card-img-top img-rounded" alt="Merienda">
+                                </a>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Merienda</h5>
+                                    <h6 class="card-title"> <a href="user_profile.html"> @username </a> </h6>
+                                    <a href="show_photo.html" class="btn btn-primary">Click for more info</a>
+                                </div>
+                            </div>
+                        </div>
+                        -->
+                    </div> <!-- row ends here -->
+                </div> <!-- container ends here -->
+
+
+            </div>
+        </div> <!-- Photos ROW ends here -->
+
+    </div> <!-- BIG CONTAINER ENDS HERE -->
+
+    
+    <!--INSERT SPACE HERE -->
+    <div class="top-bottom-margins"></div>
+
+
+    <div id="footer"></div>
+
+    <script>
+        include("header.html", "#header");
+        include("footer.html", "#footer");
+    </script>
+
+</body>
+
+</html>
