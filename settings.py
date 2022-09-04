@@ -40,4 +40,4 @@ USER_AUTH_DATA = {
 
 # A random string that is used for security purposes
 # (this has been generated automatically upon project creation)
-SECRET_KEY = "qUe6gljl7r7ijRnrxm5WJFkN3H7HOsQKUrmVqwsSZKE"
+SECRET_KEY = ""
